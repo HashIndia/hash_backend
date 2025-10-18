@@ -91,7 +91,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Handle preflight requests
-app.options('*', cors());
+app.options('*', cors(corsOptions));
 
 // Parse cookies BEFORE other middleware
 app.use(cookieParser());
