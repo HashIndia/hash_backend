@@ -185,11 +185,11 @@ export const createOrder = catchAsync(async (req, res, next) => {
   }
   
   // Send order confirmation email
-  try {
-    await emailService.sendOrderConfirmationEmail(order);
-  } catch (error) {
-    console.error('Failed to send order confirmation email:', error);
-  }
+  // try {
+  //   await emailService.sendOrderConfirmationEmail(order);
+  // } catch (error) {
+  //   console.error('Failed to send order confirmation email:', error);
+  // }
   
   res.status(201).json({
     status: 'success',
